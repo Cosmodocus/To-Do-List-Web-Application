@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300&family=Roboto&family=Rubik:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:#f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+}
+
+
+.todo-app{
+   background:#333333;
+   width: 100%;
+   max-width: 540px;
+   padding: 30px 50px;
+   border-radius: 10px;
+   margin: 10px auto;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7)
+}
+
+.todo-app h2{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #FF8000;
+    gap: 5px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.todo-app img{
+    width: 40px;
+}
+
+.input-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    border: none;
+}
+
+.input-row input{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+   
+}
+
+.input-row button{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background: #FF8000;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.input-row button:hover{
+    background:  #FFA500;
+}
+
+ul li{
+    list-style: none;
+    padding: 30px 10px 5px 50px;
+    position: relative;
+    color: #FF5252;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+
+ul li::before{
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 10px;
+}
+
+.checked{
+    color:#4CAF50;
+}
+
+.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    left: 440px;
+    border-radius: 50%;
+    color: #fff;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+   
+}
+
+ul li span:hover{
+    background: #FF5252;
+}
